@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.weeklyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/frag2"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:background="#5A5756"
+        android:textSize="12pt"
+        android:textColor="@color/white"
+        android:text="Temperature Range" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="555dp"
+        android:layout_marginTop="120dp"
+        android:paddingBottom="30pt">
+
+        <!--        <TextView-->
+        <!--            android:layout_marginLeft="14pt"-->
+        <!--            android:layout_width="325dp"-->
+        <!--            android:layout_height="15pt"-->
+        <!--            android:text="Temperature variation by day"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="8pt" />-->
+
+        <com.highsoft.highcharts.core.HIChartView
+            android:id="@+id/highChartsWeekly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

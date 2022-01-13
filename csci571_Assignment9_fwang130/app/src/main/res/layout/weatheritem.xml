@@ -1,0 +1,51 @@
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:gravity="center_horizontal"
+
+>
+
+    <!-- first element of the row-->
+    <TextView
+
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="18dip"
+        android:text="date"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <ImageView
+
+        android:id="@+id/weatherImg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="16dip" />
+
+    <TextView
+        android:id="@+id/minTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="18dip"
+        android:text="minTemp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/maxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="18dip"
+        android:text="maxTemp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:textSize="12dp" />
+</TableRow>

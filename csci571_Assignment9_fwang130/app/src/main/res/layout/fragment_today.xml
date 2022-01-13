@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2F2E2E"
+    android:paddingTop="10pt"
+
+    android:paddingBottom="15pt"
+    android:id="@+id/todayViewPager">
+
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:rowCount="3"
+       android:columnCount="3"
+       android:background="#2F2E2E"
+       >
+       <com.google.android.material.card.MaterialCardView
+           style="@style/CardView"
+           app:cardBackgroundColor="#272424"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:layout_margin="12dp"
+           app:cardCornerRadius="12dp"
+           app:cardElevation="0dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:orientation="vertical"
+           android:paddingBottom="8dp"
+
+           >
+       <ImageView
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:scaleType="fitXY"
+           app:srcCompat="@drawable/weather_windy"
+           />
+
+           <TextView
+               android:id="@+id/card1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="12dp"
+               android:text="111211111"
+               android:textColor="#FFFFFF"
+               android:textSize="16sp" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="12dp"
+               android:text="Wind Speed"
+               android:textColor="#FFFFFF"
+               android:textSize="16sp" />
+       </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+
+       <com.google.android.material.card.MaterialCardView
+           style="@style/CardView"
+           app:cardBackgroundColor="#272424"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:layout_margin="12dp"
+           app:cardCornerRadius="12dp"
+           app:cardElevation="6dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:paddingBottom="8dp"
+               >
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitXY"
+                   app:srcCompat="@drawable/gauge"
+                   />
+
+               <TextView
+                   android:id="@+id/card2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="111211111"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="Pressure"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp"/>
+           </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+       <com.google.android.material.card.MaterialCardView
+           style="@style/CardView"
+           app:cardBackgroundColor="#272424"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:layout_margin="12dp"
+           app:cardCornerRadius="12dp"
+           app:cardElevation="6dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:paddingBottom="8dp"
+               >
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitXY"
+                   app:srcCompat="@drawable/weather_pouring"
+                   />
+
+               <TextView
+                   android:id="@+id/card3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="111211111"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="Precipitation"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp" />
+           </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+       <com.google.android.material.card.MaterialCardView
+           style="@style/CardView"
+           app:cardBackgroundColor="#272424"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:layout_margin="12dp"
+           app:cardCornerRadius="12dp"
+           app:cardElevation="6dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:paddingBottom="8dp"
+               >
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitXY"
+                   app:srcCompat="@drawable/thermometer"
+                   />
+
+               <TextView
+                   android:id="@+id/card4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="111211111"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="Temperature"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp" />
+           </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+       <com.google.android.material.card.MaterialCardView
+           style="@style/CardView"
+           app:cardBackgroundColor="#272424"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:layout_margin="12dp"
+           app:cardCornerRadius="12dp"
+           app:cardElevation="6dp">
+
+<!--           !set the status and img using weatherCode-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:paddingBottom="8dp"
+               >
+               <ImageView
+                   android:id="@+id/statusImg"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitXY"
+
+                   />
+
+
+               <TextView
+                   android:id="@+id/card5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp" />
+           </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+       <com.google.android.material.card.MaterialCardView
+           style="@style/CardView"
+           app:cardBackgroundColor="#272424"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:layout_margin="12dp"
+           app:cardCornerRadius="12dp"
+           app:cardElevation="6dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:paddingBottom="8dp"
+               >
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitXY"
+                   app:srcCompat="@drawable/water_percent"
+                   />
+
+               <TextView
+                   android:id="@+id/card6"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="111211111"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="Humidity"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp" />
+           </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+       <com.google.android.material.card.MaterialCardView
+           style="@style/CardView"
+           app:cardBackgroundColor="#272424"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:layout_margin="12dp"
+           app:cardCornerRadius="12dp"
+           app:cardElevation="6dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:paddingBottom="8dp"
+               >
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitXY"
+                   app:srcCompat="@drawable/eye_outline"
+                   />
+
+               <TextView
+                   android:id="@+id/card7"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="111211111"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="Visibility"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp" />
+           </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+       <com.google.android.material.card.MaterialCardView
+           style="@style/CardView"
+           app:cardBackgroundColor="#272424"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:layout_margin="12dp"
+           app:cardCornerRadius="12dp"
+           app:cardElevation="6dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:paddingBottom="8dp"
+               >
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitXY"
+                   app:srcCompat="@drawable/weather_fog"
+                   />
+
+               <TextView
+                   android:id="@+id/card8"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="111211111"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="Cloud Cover"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp" />
+           </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+       <com.google.android.material.card.MaterialCardView
+           style="@style/CardView"
+           app:cardBackgroundColor="#272424"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:layout_margin="12dp"
+           app:cardCornerRadius="12dp"
+           app:cardElevation="6dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:paddingBottom="8dp"
+               >
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitXY"
+                   app:srcCompat="@drawable/earth"
+                   />
+
+               <TextView
+                   android:id="@+id/card9"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="111211111"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="Ozone"
+                   android:textColor="#FFFFFF"
+                   android:textSize="16sp" />
+           </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+
+   </GridLayout>
+
+</RelativeLayout>
