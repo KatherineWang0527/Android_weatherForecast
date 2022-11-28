@@ -23,9 +23,7 @@ import java.util.Set;
 public class TabLayoutAdapter extends FragmentPagerAdapter {
     Context mContext;
     SharedPreferences preferences;
-    private long baseId = 0;
     String previous;
-    List<String> list = new ArrayList<>();
 
     public void setContext(Context context) {
         mContext = context;
@@ -49,36 +47,13 @@ public class TabLayoutAdapter extends FragmentPagerAdapter {
         }
     }
 
-//    @Override
-//    public int getItemPosition (Object object)
-//    {
-////        int i = 0;
-////        for(String s: previousS) {
-////            if(s.equals(object)) {
-////                return i;
-////            }
-////            i++;
-////        }
-//        return POSITION_NONE;
-//    }
-//        int index = views.indexOf (object);
-//        if (index == -1)
-//            return POSITION_NONE;
-//        else
-//            return index;
-//    }
+
     //this is called when notifyDataSetChanged() is called
     @Override
     public int getItemPosition(Object object) {
         // refresh all fragments when data set changed
         return PagerAdapter.POSITION_NONE;
     }
-//
-//    @Override
-//    public long getItemId(int position) {
-//        // give an ID different from position when position has been changed
-//        return baseId + position;
-//    }
 
 
     @Override
@@ -94,24 +69,4 @@ public class TabLayoutAdapter extends FragmentPagerAdapter {
         }
     }
 
-//
-//    @Override
-//    public CharSequence getPageTitle(int position) {
-//        if(preferences == null) {
-//            return "";
-//
-////            tabLayout.getTabAt(0).setIcon(statusImgDefault);
-//        }else{
-//
-//            return position+"";
-//        }
-//
-//    }
-public void setData(String s) {
-        this.previous = s;
-}
-
-//    public void setData(Set<String> favorite) {
-//        this.previousS = favorite;
-//    }
 }
